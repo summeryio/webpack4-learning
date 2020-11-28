@@ -7,9 +7,13 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.jpg$/,
+      test: /\.(jpg|png|gif)$/,
       use: {
-        loader: 'file-loader'
+        loader: 'file-loader',
+        options: {
+          name: '[name]_[hash].[ext]',
+          outputPath: '/images'
+        }
       }
     }]
   },
