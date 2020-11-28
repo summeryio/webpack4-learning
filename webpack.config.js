@@ -12,10 +12,13 @@ module.exports = {
         loader: 'url-loader',
         options: {
           name: '[name]_[hash].[ext]',
-          outputPath: '/dist/images',
+          outputPath: 'images/',
           limit: 2048
         }
       }
+    },{
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
     }]
   },
   output: {
