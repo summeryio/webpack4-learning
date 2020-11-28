@@ -1,5 +1,5 @@
 import avatar from './avatar.jpg'
-import './index.css'
+import './index.scss'
 
 let img = new Image()
 let root = document.getElementById('root')
