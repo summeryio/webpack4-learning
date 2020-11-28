@@ -1,3 +1,7 @@
-const Header = require('./header')
+import avatar from './avatar.jpg'
 
-new Header()
+let img = new Image()
+let root = document.getElementById('root')
+
+img.src = avatar
+root.append(img)

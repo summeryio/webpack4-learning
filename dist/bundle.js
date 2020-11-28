@@ -86,14 +86,15 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/header.js":
-/*!***********************!*\
-  !*** ./src/header.js ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/avatar.jpg":
+/*!************************!*\
+  !*** ./src/avatar.jpg ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("function Header() {\n  var oRoot = document.getElementById('root')\n  var createDiv = document.createElement('div')\n  \n  createDiv.innerHTML = 'Header'\n  oRoot.append(createDiv)\n}\n\nmodule.exports = Header\n\n//# sourceURL=webpack:///./src/header.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"21ce145d550b1adf6a6227139cb2e572.jpg\");\n\n//# sourceURL=webpack:///./src/avatar.jpg?");
 
 /***/ }),
 
@@ -101,10 +102,11 @@ eval("function Header() {\n  var oRoot = document.getElementById('root')\n  var 
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("const Header = __webpack_require__(/*! ./header */ \"./src/header.js\")\n\nnew Header()\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _avatar_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./avatar.jpg */ \"./src/avatar.jpg\");\n\n\nlet img = new Image()\nlet root = document.getElementById('root')\n\nimg.src = _avatar_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"]\nroot.append(img)\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
