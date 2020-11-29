@@ -1,11 +1,14 @@
-import './style.css'
+import counter from './counter'
+import number from './number'
 
-const button = document.createElement('button')
-button.innerHTML = 'add'
-document.body.appendChild(button)
+counter()
+number()
 
-button.addEventListener('click', () => {
-  const div = document.createElement('div')
-  div.innerHTML = 'item'
-  document.body.append(div)
-})
+if (module.hot) {
+  module.hot.accept('./number', () => {
+    let n = document.getElementById('number')
+    document.body.removeChild(n)
+
+    number()
+  })
+}
