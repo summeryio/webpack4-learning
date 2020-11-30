@@ -1,4 +1,3 @@
-
 const arr = [
   new Promise(() => {}),
   new Promise(() => {}),
