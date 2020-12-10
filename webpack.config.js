@@ -4,8 +4,8 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const webpack = require('webpack')
 
 module.exports = {
-  mode: 'development',
-  devtool: 'cheap-module-eval-source-map',
+  mode: 'production',
+  devtool: 'cheap-module-source-map',
   entry: {
     main: './src/index.js'
   },
@@ -70,9 +70,6 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ],
-  optimization: {
-    usedExports: true
-  },
   output: {
     // publicPath: '/',
     filename: '[name].js',
