@@ -1,3 +1,3 @@
 import {add} from './math'
 
-add(100, 200)
+add(100, 220)
