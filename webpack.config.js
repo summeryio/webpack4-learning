@@ -70,8 +70,11 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ],
+  optimization: {
+    usedExports: true
+  },
   output: {
-    publicPath: '/',
+    // publicPath: '/',
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist')
   }

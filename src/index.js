@@ -1,12 +1,3 @@
-// 设置 "useBuiltIns": "usage" 后无需引入
-// import "core-js/stable";
-// import "regenerator-runtime/runtime";
+import {add} from './math'
 
-const arr = [
-  new Promise(() => {}),
-  new Promise(() => {}),
-]
-
-arr.map(item => {
-  console.log(item);
-})
+add(100, 200)
