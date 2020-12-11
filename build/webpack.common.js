@@ -55,11 +55,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     }),
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin()
   ],
   output: {
     publicPath: '/',
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, '../dist')
   }
 }
