@@ -1,3 +1,3 @@
-import {add} from './math'
 
-add(100, 220)
+
+console.log(_.join(['a', 11, 'ccc'], '|'));
