@@ -59,7 +59,7 @@ module.exports = {
   ],
   optimization: {
     splitChunks: {
-      chunks: "all", // initial async all
+      chunks: "all",
       minSize: 30000,
       minChunks: 1,
       maxAsyncRequests: 5,
@@ -69,13 +69,11 @@ module.exports = {
       cacheGroups: {
         vendors: {
           test: /[\\/]node_modules[\\/]/,
-          priority: -10, // 打包的优先级
-          filename: 'vendors.js'
+          priority: -10,
         },
         default: {
           priority: -20,
           reuseExistingChunk: true,
-          filename: 'common.js'
         }
       }
     }
