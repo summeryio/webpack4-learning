@@ -69,10 +69,14 @@ module.exports = {
       cacheGroups: {
         vendors: {
           test: /[\\/]node_modules[\\/]/,
-          priority: -10,
+          priority: -10, // 打包的优先级
           filename: 'vendors.js'
         },
-        default: false
+        default: {
+          priority: -20,
+          reuseExistingChunk: true,
+          filename: 'common.js'
+        }
       }
     }
   },
