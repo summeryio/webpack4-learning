@@ -1,5 +1,5 @@
 document.addEventListener('click', () => {
-  import('./click.js').then(({default: fn}) => {
+  import(/* webpackPrefetch: true */ './click.js').then(({default: fn}) => {
     fn()
   })
 })
