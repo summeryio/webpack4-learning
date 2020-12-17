@@ -2,6 +2,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const { findLastKey } = require('lodash')
+const webpack = require('webpack')
 
 module.exports = {
   entry: {
@@ -36,7 +37,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     }),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      // _: 'lodash'
+      _join: ['lodash', 'join']
+    })
   ],
   optimization: {
     runtimeChunk: {
