@@ -40,8 +40,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
       $: 'jquery',
-      // _: 'lodash'
-      _join: ['lodash', 'join']
+      _: 'lodash'
     })
   ],
   optimization: {
