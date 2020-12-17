@@ -1,4 +1,6 @@
-import './style.css'
-import './color.css'
+import _ from 'lodash'
+import $ from 'jquery'
 
-document.write('hello world')
+const oDiv = $('<div>')
+oDiv.html(_.join(['aaa', 'bbb', 'ccc'], '-'))
+$(document.body).append(oDiv)

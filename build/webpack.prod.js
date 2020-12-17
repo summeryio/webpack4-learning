@@ -38,6 +38,10 @@ const prodConfig = {
       chunkFilename: '[id].css'
     })
   ],
+  output: {
+    filename: '[name].[contenthash].js',
+    chunkFilename: '[name].[contenthash].chunk.js',
+  },
 }
 
 module.exports = merge(commonConfig, prodConfig)

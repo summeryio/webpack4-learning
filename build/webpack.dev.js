@@ -40,6 +40,10 @@ const devConfig = {
     new webpack.HotModuleReplacementPlugin()
   ],
   optimization: {},
+  output: {
+    filename: '[name].js',
+    chunkFilename: '[name].chunk.js',
+  },
 }
 
 module.exports = merge(commonConfig, devConfig)
